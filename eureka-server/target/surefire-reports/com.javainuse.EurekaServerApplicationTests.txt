@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.javainuse.EurekaServerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.787 sec - in com.javainuse.EurekaServerApplicationTests

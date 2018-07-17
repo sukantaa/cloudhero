@@ -1,0 +1,46 @@
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instanceId: ${spring.application.name}:${random.value}
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+    
+server:
+  port: 8762
+  context-path: /cloudhero
+  
+mongodb:
+  primary:
+    host: localhost
+    port: 27017
+    database: five
+  secondary:
+    host: localhost
+    port: 27017
+    database: seven
+
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration
+#  h2:
+#    console:
+#      enabled: true
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *
+
