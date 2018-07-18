@@ -1,4 +1,4 @@
 {
   "name": "Start on Heroku: Java",
-  "description": "A barebones Java app, which can easily be deployed to Heroku."
+  "description": "A Spring boot cloud Java app, which can easily be deployed to Heroku."
 }
